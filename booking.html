@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westcoast Education - Booking</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   <div class="nav-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Westcoast Education</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div id="auth-links" class="auth-links">
+                <!-- Filled by JavaScript -->
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
+    </nav>
+</header>
+
+<div class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <span class="drawer-logo">Westcoast Education</span>
+    <div class="drawer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="drawer-auth-links" class="drawer-auth-links"></div>
+</div>
+
+    <main>
+        <div class="container">
+            <h1>Complete your booking</h1>
+            
+            <div id="booking-course-summary" class="booking-summary">
+                <!-- Course summary will be shown here -->
+            </div>
+            
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Billing address:</label>
+                    <input type="text" id="address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Mobile number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="booking-type">Booking type:</label>
+                    <select id="booking-type" required>
+                        <option value="classroom">Classroom</option>
+                        <option value="distance">Distance</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="selected-date">Select date:</label>
+                    <select id="selected-date" required>
+                        <!-- Dates will be filled by JavaScript -->
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Confirm booking</button>
+            </form>
+            
+            <div id="message-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Westcoast Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

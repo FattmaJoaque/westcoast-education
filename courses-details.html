@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westcoast Education - Course Details</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="nav-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Westcoast Education</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div id="auth-links" class="auth-links">
+                <!-- Filled by JavaScript -->
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
+    </nav>
+</header>
+
+<div class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <span class="drawer-logo">Westcoast Education</span>
+    <div class="drawer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="drawer-auth-links" class="drawer-auth-links"></div>
+</div>
+
+    <main>
+        <div class="container">
+            <div id="course-details">
+                <!-- Filled dynamically by JavaScript -->
+            </div>
+            
+            <div class="booking-section">
+                <h3>Book this course</h3>
+                <div id="date-selection">
+                    <!-- Available dates will be shown here -->
+                </div>
+                <button id="book-course-btn" class="btn btn-primary">Continue to booking</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Westcoast Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

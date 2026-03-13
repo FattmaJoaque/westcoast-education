@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westcoast Education - Admin</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="nav-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Westcoast Education</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div id="auth-links" class="auth-links">
+                <!-- Filled by JavaScript -->
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
+    </nav>
+</header>
+
+<div class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <span class="drawer-logo">Westcoast Education</span>
+    <div class="drawer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="drawer-auth-links" class="drawer-auth-links"></div>
+</div>
+    <main>
+        <div class="container">
+            <h1>Administration</h1>
+            
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="courses">Manage Courses</button>
+                <button class="tab-btn" data-tab="bookings">Bookings</button>
+                <button class="tab-btn" data-tab="teachers">Teachers</button>
+            </div>
+            
+            <div id="tab-courses" class="tab-content active">
+                <h2>Add New Course</h2>
+                <form id="add-course-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="title">Course title:</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="courseNumber">Course number:</label>
+                        <input type="text" id="courseNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="days">Number of days:</label>
+                        <input type="number" id="days" min="1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="price">Price (SEK):</label>
+                        <input type="number" id="price" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="type">Course type:</label>
+                        <select id="type" required>
+                            <option value="classroom">Classroom</option>
+                            <option value="distance">Distance</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="teacherId">Teacher:</label>
+                        <select id="teacherId" required>
+                            <!-- Filled by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" required>
+                            <option value="programming">Programming</option>
+                            <option value="webdesign">Web Design</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="level">Level:</label>
+                        <select id="level" required>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dates">Available dates (comma-separated YYYY-MM-DD):</label>
+                        <input type="text" id="dates" placeholder="2024-09-01, 2024-10-01" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Add Course</button>
+                </form>
+                
+                <h2>Existing Courses</h2>
+                <div id="admin-course-list" class="admin-course-list">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div id="tab-bookings" class="tab-content">
+                <h2>Bookings per Course</h2>
+                <div id="bookings-per-course">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+            
+            <div id="tab-teachers" class="tab-content">
+                <h2>Teachers</h2>
+                <div id="teachers-list">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Westcoast Education. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

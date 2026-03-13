@@ -1,0 +1,573 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "JavaScript for Beginners",
+      "courseNumber": "JS101",
+      "days": 5,
+      "price": 12995,
+      "type": "classroom",
+      "teacherId": 1,
+      "rating": 4.8,
+      "image": "js-beginner.jpg",
+      "dates": [
+        "2026-09-02",
+        "2026-10-07",
+        "2026-11-04"
+      ],
+      "description": "Learn the basics of JavaScript - from variables to functions. This course is perfect for those who want to start their programming journey.",
+      "category": "programming",
+      "level": "beginner",
+      "prerequisites": "No prior programming experience needed",
+      "includes": [
+        "Course material",
+        "Exercises",
+        "Teacher support",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Python for Data Analysis",
+      "courseNumber": "PYTHON203",
+      "days": 5,
+      "price": 14995,
+      "type": "classroom",
+      "teacherId": 3,
+      "rating": 4.7,
+      "image": "python-data.jpg",
+      "dates": [
+        "2026-09-10",
+        "2026-10-15"
+      ],
+      "description": "Use Python to analyze and visualize data. Learn pandas, numpy, and matplotlib to extract insights from data.",
+      "category": "data-science",
+      "level": "intermediate",
+      "prerequisites": "Basic Python knowledge",
+      "includes": [
+        "Data sets",
+        "Jupyter notebooks",
+        "Exercises",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Web Development with HTML & CSS",
+      "courseNumber": "WEB101",
+      "days": 3,
+      "price": 9995,
+      "type": [
+        "classroom",
+        " distance"
+      ],
+      "teacherId": 1,
+      "rating": 4.6,
+      "image": "web-basics.jpg",
+      "dates": [
+        "2026-08-25",
+        "2026-09-22",
+        "2026-10-27"
+      ],
+      "description": "Create modern, responsive websites with HTML5 and CSS3. Learn flexbox, grid, and mobile-first design.",
+      "category": "web-design",
+      "level": "beginner",
+      "prerequisites": "No prior knowledge needed",
+      "includes": [
+        "Design exercises",
+        "Project templates",
+        "Browser tools",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "TypeScript Masterclass",
+      "courseNumber": "TS301",
+      "days": 3,
+      "price": 11995,
+      "type": "distance",
+      "teacherId": 2,
+      "rating": 4.5,
+      "image": "typescript.jpg",
+      "dates": [
+        "2026-09-05",
+        "2026-10-10"
+      ],
+      "description": "Learn TypeScript from basics to advanced. Master types, interfaces, generics, and modern frontend development.",
+      "category": "programming",
+      "level": "intermediate",
+      "prerequisites": "Good JavaScript knowledge",
+      "includes": [
+        "TypeScript exercises",
+        "Integration with frameworks",
+        "Best practices",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "UX/UI Design Fundamentals",
+      "courseNumber": "UX101",
+      "days": 4,
+      "price": 13995,
+      "type": [
+        "classroom",
+        " distance"
+      ],
+      "teacherId": 4,
+      "rating": 4.7,
+      "image": "ux-design.jpg",
+      "dates": [
+        "2026-09-12",
+        "2026-10-17",
+        "2026-11-21"
+      ],
+      "description": "Learn the principles of user experience and user interface design. Create wireframes, prototypes, and user-friendly designs.",
+      "category": "web-design",
+      "level": "beginner",
+      "prerequisites": "No prior design experience needed",
+      "includes": [
+        "Design tools",
+        "Portfolio projects",
+        "User testing",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Node.js Backend Development",
+      "courseNumber": "NODE301",
+      "days": 5,
+      "price": 16995,
+      "type": "classroom",
+      "teacherId": 5,
+      "rating": 4.8,
+      "image": "nodejs.jpg",
+      "dates": [
+        "2026-09-18",
+        "2026-10-23"
+      ],
+      "description": "Build scalable backend applications with Node.js, Express, and MongoDB. Learn REST APIs, authentication, and deployment.",
+      "category": "programming",
+      "level": "intermediate",
+      "prerequisites": "JavaScript knowledge",
+      "includes": [
+        "API development",
+        "Database design",
+        "Security",
+        "Certificate"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Machine Learning Introduction",
+      "courseNumber": "ML101",
+      "days": 4,
+      "price": 17995,
+      "type": "distance",
+      "teacherId": 3,
+      "rating": 4.9,
+      "image": "machine-learning.jpg",
+      "dates": [
+        "2026-10-01",
+        "2026-11-05"
+      ],
+      "description": "Introduction to machine learning concepts and algorithms. Work with real datasets and build your first ML models.",
+      "category": "data-science",
+      "level": "intermediate",
+      "prerequisites": "Python knowledge, basic math",
+      "includes": [
+        "ML algorithms",
+        "Hands-on projects",
+        "Cloud computing",
+        "Certificate"
+      ]
+    },
+    {
+      "title": "JavaScript Masterclass",
+      "courseNumber": "JS202",
+      "days": 10,
+      "price": 13999,
+      "type": "distance",
+      "teacherId": 1,
+      "category": "programming",
+      "level": "advanced",
+      "description": "An insight into advanced JavaScript ",
+      "dates": [
+        "2026-10-23"
+      ],
+      "rating": 0,
+      "image": "placeholder.jpg",
+      "id": "9"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Anna Andersson",
+      "email": "anna.andersson@westcoast.se",
+      "specialty": "JavaScript, HTML/CSS, Web Development",
+      "bio": "10 years of experience as a web developer and educator. Anna has worked with startups and large companies to build modern web applications.",
+      "image": "teacher-anna.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/anna-andersson",
+        "twitter": "@anna_teaches"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Erik Eriksson",
+      "email": "erik.eriksson@westcoast.se",
+      "specialty": "React, TypeScript, Node.js, Frontend Architecture",
+      "bio": "Former system architect at Spotify. Erik brings real-world experience from large-scale applications and loves sharing his knowledge.",
+      "image": "teacher-erik.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/erik-eriksson",
+        "github": "@erikdev"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Maria Lindberg",
+      "email": "maria.lindberg@westcoast.se",
+      "specialty": "Python, Data Science, Machine Learning, AI",
+      "bio": "PhD in Computer Science from Chalmers University. Maria has worked with AI research and now focuses on making data science accessible.",
+      "image": "teacher-maria.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/maria-lindberg",
+        "twitter": "@maria_ai"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Johan Wikström",
+      "email": "johan.wikstrom@westcoast.se",
+      "specialty": "UX/UI Design, Product Design, Design Thinking",
+      "bio": "Design lead with 12 years of experience from agencies and product companies. Johan has designed apps used by millions.",
+      "image": "teacher-johan.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/johan-wikstrom",
+        "dribbble": "@johandesign"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Sofia Karlsson",
+      "email": "sofia.karlsson@westcoast.se",
+      "specialty": "Node.js, Databases, Cloud Architecture, DevOps",
+      "bio": "Backend specialist with experience from AWS, Azure, and large-scale systems. Sofia loves teaching complex topics in simple ways.",
+      "image": "teacher-sofia.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/sofia-karlsson",
+        "github": "@sofiadev"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Test User",
+      "email": "test@test.se",
+      "password": "password123",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "bookedCourses": [
+        2,
+        5,
+        "1",
+        "3",
+        "4",
+        "1",
+        "3",
+        "3",
+        "1"
+      ],
+      "purchasedCourses": [
+        1,
+        3
+      ],
+      "wishlist": [
+        4,
+        7
+      ],
+      "createdAt": "2024-01-15",
+      "newsletter": true
+    },
+    {
+      "id": "2",
+      "name": "Kalle Karlsson",
+      "email": "kalle@email.com",
+      "password": "hemligt123",
+      "address": "Main Street 10, 41123 Gothenburg",
+      "phone": "0709876543",
+      "bookedCourses": [
+        1
+      ],
+      "purchasedCourses": [
+        3,
+        6
+      ],
+      "wishlist": [
+        2
+      ],
+      "createdAt": "2024-02-20",
+      "newsletter": false
+    },
+    {
+      "id": "3",
+      "name": "Emma Svensson",
+      "email": "emma.svensson@email.com",
+      "password": "emma2024",
+      "address": "Park Avenue 5, 41452 Gothenburg",
+      "phone": "0735551234",
+      "bookedCourses": [],
+      "purchasedCourses": [
+        4
+      ],
+      "wishlist": [
+        1,
+        7,
+        8
+      ],
+      "createdAt": "2024-03-10",
+      "newsletter": true
+    },
+    {
+      "id": "4",
+      "name": "Marcus Johansson",
+      "email": "marcus.j@email.com",
+      "password": "marcus123",
+      "address": "Harbor Street 22, 41423 Gothenburg",
+      "phone": "0764445678",
+      "bookedCourses": [
+        7
+      ],
+      "purchasedCourses": [
+        2,
+        5
+      ],
+      "wishlist": [
+        8
+      ],
+      "createdAt": "2024-04-05",
+      "newsletter": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "courseId": 1,
+      "userId": 2,
+      "bookingDate": "2024-08-15",
+      "type": "classroom",
+      "status": "confirmed",
+      "selectedDate": "2024-09-02",
+      "paymentStatus": "paid",
+      "amount": 12995
+    },
+    {
+      "id": "3",
+      "courseId": 5,
+      "userId": 1,
+      "bookingDate": "2024-08-12",
+      "type": "distance",
+      "status": "confirmed",
+      "selectedDate": "2024-09-05",
+      "paymentStatus": "paid",
+      "amount": 11995
+    },
+    {
+      "id": "4",
+      "courseId": 7,
+      "userId": 4,
+      "bookingDate": "2024-08-18",
+      "type": "classroom",
+      "status": "confirmed",
+      "selectedDate": "2024-09-18",
+      "paymentStatus": "paid",
+      "amount": 16995
+    },
+    {
+      "id": "5",
+      "courseId": 3,
+      "userId": 2,
+      "bookingDate": "2024-07-20",
+      "type": "classroom",
+      "status": "cancelled",
+      "selectedDate": "2024-09-10",
+      "paymentStatus": "refunded",
+      "amount": 14995
+    },
+    {
+      "id": "3018",
+      "userId": "1",
+      "courseId": "1",
+      "type": "classroom",
+      "selectedDate": "2026-09-02",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 12995,
+      "bookingDate": "2026-03-11",
+      "status": "confirmed"
+    },
+    {
+      "userId": "1",
+      "courseId": "3",
+      "type": "classroom",
+      "selectedDate": "2026-09-10",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 14995,
+      "bookingDate": "2026-03-11",
+      "status": "confirmed",
+      "id": "lkRhbO2"
+    },
+    {
+      "userId": "1",
+      "courseId": "4",
+      "type": "classroom",
+      "selectedDate": "2026-08-25",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 9995,
+      "bookingDate": "2026-03-11",
+      "status": "confirmed",
+      "id": "TyJDlJd"
+    },
+    {
+      "userId": "1",
+      "courseId": "1",
+      "type": "classroom",
+      "selectedDate": "2026-09-02",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 12995,
+      "bookingDate": "2026-03-11",
+      "status": "confirmed",
+      "id": "NWrROIF"
+    },
+    {
+      "userId": "1",
+      "courseId": "3",
+      "type": "classroom",
+      "selectedDate": "2026-09-10",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 14995,
+      "bookingDate": "2026-03-11",
+      "status": "confirmed",
+      "id": "-Y2tTeA"
+    },
+    {
+      "userId": "1",
+      "courseId": "3",
+      "type": "classroom",
+      "selectedDate": "2026-09-10",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 14995,
+      "bookingDate": "2026-03-12",
+      "status": "confirmed",
+      "id": "FgbiiDJ"
+    },
+    {
+      "userId": "1",
+      "courseId": "1",
+      "type": "classroom",
+      "selectedDate": "2026-11-04",
+      "name": "Test User",
+      "email": "test@test.se",
+      "address": "Test Street 1, 12345 Test City",
+      "phone": "0701234567",
+      "amount": 12995,
+      "bookingDate": "2026-03-12",
+      "status": "confirmed",
+      "id": "gruCBwo"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "courseId": 1,
+      "userId": 2,
+      "rating": 5,
+      "comment": "Excellent course for beginners! Anna is a great teacher.",
+      "date": "2024-03-15"
+    },
+    {
+      "id": "2",
+      "courseId": 1,
+      "userId": 3,
+      "rating": 4,
+      "comment": "Very good introduction to JavaScript. Could use more exercises.",
+      "date": "2024-04-20"
+    },
+    {
+      "id": "4",
+      "courseId": 3,
+      "userId": 4,
+      "rating": 5,
+      "comment": "Maria makes data science fun and accessible. Highly recommended!",
+      "date": "2024-06-12"
+    },
+    {
+      "id": "5",
+      "courseId": 4,
+      "userId": 3,
+      "rating": 4,
+      "comment": "Great foundation in web development. Perfect for beginners.",
+      "date": "2024-07-08"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Programming",
+      "slug": "programming",
+      "description": "Learn to code with our programming courses"
+    },
+    {
+      "id": "2",
+      "name": "Web Design",
+      "slug": "web-design",
+      "description": "Create beautiful websites and user interfaces"
+    },
+    {
+      "id": "3",
+      "name": "Data Science",
+      "slug": "data-science",
+      "description": "Analyze data and build machine learning models"
+    }
+  ],
+  "levels": [
+    {
+      "id": "1",
+      "name": "Beginner",
+      "description": "No prior knowledge needed"
+    },
+    {
+      "id": "2",
+      "name": "Intermediate",
+      "description": "Some experience recommended"
+    },
+    {
+      "id": "3",
+      "name": "Advanced",
+      "description": "For experienced professionals"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

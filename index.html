@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+      <script type="module" src="js/app.js"></script>
+    <title>Westcoast Education homepage</title>
+</head>
+
+<body>
+  <div class="nav-overlay"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Westcoast Education</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div id="auth-links" class="auth-links">
+                <!-- Filled by JavaScript -->
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
+    </nav>
+</header>
+
+<div class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <span class="drawer-logo">Westcoast Education</span>
+    <div class="drawer-nav-links">
+        <a href="index.html">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+    <div id="drawer-auth-links" class="drawer-auth-links"></div>
+</div>
+
+    <main>
+
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Westcoast Education</h1>
+                <p class="hero-subtitle">Your Gateway to IT Excellence Since 1985</p>
+                <p class="hero-description">
+                    For nearly four decades, we've been the leading provider of technical education on the Swedish west
+                    coast.
+                    From classroom training to cutting-edge on-demand learning, we're here to shape the developers of
+                    tomorrow.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+      <section id="about" class="about-section">
+    <h2>About Westcoast Education</h2>
+    
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>Our Legacy</h3>
+            <p>
+                Founded in 1985, Westcoast Education has been at the forefront of IT education for nearly 40 years. 
+                What started as a small classroom initiative just north of Gothenburg has grown into one of Sweden's 
+                most respected technical training providers.
+            </p>
+        </div>
+        
+        <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+                We specialize in system development with a focus on web and mobile solutions. Our mission is to 
+                bridge the gap between theoretical knowledge and practical, industry-ready skills. We don't just 
+                teach code – we shape developers who can think, create, and innovate.
+            </p>
+        </div>
+        
+        <div class="about-card">
+            <h3>Our Evolution</h3>
+            <p>
+                While traditional classroom training remains in our DNA, we're embracing the future with our new 
+                on-demand platform. Whether you prefer face-to-face interaction, distance learning, or self-paced 
+                video courses, Westcoast Education has the perfect learning path for you.
+            </p>
+        </div>
+         <section class="about-section">
+                <h2>Our Team</h2>
+                <div id="teachers-list" class="teachers-grid">
+                    <!-- Filled by JavaScript -->
+                </div>
+            </section>
+    </div>
+</section>
+
+
+
+        <section id="courses" class="courses-section">
+            <h2>Our Courses</h2>
+
+            <div class="course-tabs">
+                 <button class="tab-btn active" data-tab="all">All Courses</button>
+    <button class="tab-btn" data-tab="classroom">Classroom</button>
+    <button class="tab-btn" data-tab="distance">Distance</button>
+    <button class="tab-btn" data-tab="popular">Popular Courses</button>
+            </div>
+
+            <div id="popular-courses" class="course-grid">
+                <!-- Courses loaded dynamically via JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Westcoast Education</h4>
+            <p>Technical training excellence on the Swedish west coast since 1985. Shaping the developers of tomorrow, today.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Visit Us</h4>
+            <address>
+                Westcoast Education<br>
+                Utbildningsvägen 12<br>
+                442 50, Ytterby<br>
+                Sweden
+            </address>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>
+                📞 +46 (0)31 123 456<br>
+                ✉️ info@westcoasteducation.se<br>
+                🕒 Mon-Fri: 08:00 - 17:00
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Westcoast Education. All rights reserved. | Empowering IT professionals for nearly 40 years.</p>
+    </div>
+</footer>
+</body>
+
+
+</html>
