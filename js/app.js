@@ -54,7 +54,7 @@ async function initHomePage() {
 
     renderCourseList(await getAllCourses(), 'popular-courses');
 
-    // Visa lärare
+   
     const teachersContainer = document.getElementById('teachers-list');
     if (teachersContainer) {
         const teachers = await getAllTeachers();
@@ -70,7 +70,7 @@ async function initHomePage() {
         }
     }
 
-    // Tab-knappar för kursfiltrering
+ 
     const tabs = document.querySelectorAll('.tab-btn');
     tabs.forEach(tab => {
         tab.addEventListener('click', async () => {

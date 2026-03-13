@@ -30,7 +30,7 @@ export async function displayAllCourses(containerId = 'course-list') {
 export async function displayFilteredCourses(filters, containerId = 'course-list') {
     showLoading(containerId, true);
     
-    // Bygg query-sträng från filter
+    
     let queryString = '?';
     
     if (filters.category && filters.category !== 'all') {
@@ -45,14 +45,14 @@ export async function displayFilteredCourses(filters, containerId = 'course-list
         queryString += `q=${filters.search}&`;
     }
     
-    // Ta bort sista & om det finns
+   
     queryString = queryString.replace(/&$/, '');
     
     const courses = queryString.length > 1 
         ? await getCoursesWithFilters(queryString)
         : await getAllCourses();
     
-    // Sortera om det behövs
+  
     if (filters.sortBy && courses) {
         courses.sort((a, b) => {
             if (filters.sortBy === 'price') {
@@ -88,10 +88,10 @@ export async function displayCourseDetails(courseId) {
         return;
     }
     
-    // Hämta lärare för kursen
+   
     const teacher = course.teacherId ? await getTeacherById(course.teacherId) : null;
     
-    // Skapa HTML för kursdetaljer
+   
     container.innerHTML = `
         <div class="course-detail-card">
             <div class="course-header">
@@ -156,7 +156,7 @@ export async function displayCourseDetails(courseId) {
         </div>
     `;
     
-    // Visa tillgängliga datum för bokning
+    
     const dateContainer = document.getElementById('date-selection');
     if (dateContainer && course.dates && course.dates.length > 0) {
         dateContainer.innerHTML = `
@@ -167,7 +167,7 @@ export async function displayCourseDetails(courseId) {
         `;
     }
     
-    // Sätt upp bokningsknapp
+   
     const bookBtn = document.getElementById('book-course-btn');
     if (bookBtn) {
         bookBtn.onclick = () => redirectToBooking(course);
@@ -182,7 +182,7 @@ function redirectToBooking(course) {
     if (!user) {
         showMessage('Du måste vara inloggad för att boka kurser', 'info');
         
-        // Spara kursen i sessionStorage så vi kan återvända efter inloggning
+        
         sessionStorage.setItem('redirectAfterLogin', 'booking.html');
         sessionStorage.setItem('selectedCourse', JSON.stringify(course));
         
@@ -190,9 +190,8 @@ function redirectToBooking(course) {
         return;
     }
     
-    // Spara kursen i sessionStorage för bokningssidan
     sessionStorage.setItem('selectedCourse', JSON.stringify(course));
     
-    // Gå till bokningssidan
+   
     window.location.href = 'booking.html';
 }

@@ -1,6 +1,5 @@
 export const API_BASE_URL = 'http://localhost:3000';
 
-// Alla API-endpoints samlade på ett ställe
 export const API_ENDPOINTS = {
     COURSES: `${API_BASE_URL}/courses`,
     TEACHERS: `${API_BASE_URL}/teachers`,
@@ -10,7 +9,7 @@ export const API_ENDPOINTS = {
     CATEGORIES: `${API_BASE_URL}/categories`
 };
 
-// Statusmeddelanden för olika situationer
+
 export const MESSAGES = {
     LOGIN_SUCCESS: 'Login successful! Welcome back.',
     LOGIN_FAILED: 'Login failed. Please check your credentials and try again.',

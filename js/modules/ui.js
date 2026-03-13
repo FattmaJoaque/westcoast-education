@@ -57,7 +57,7 @@ export function setupMobileMenu() {
     if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
     if (overlay) overlay.addEventListener('click', closeDrawer);
 
-    // Stäng vid länkklick
+  
     drawer.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', closeDrawer);
     });

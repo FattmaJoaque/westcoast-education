@@ -10,13 +10,13 @@ import { isValidEmail, formatDate } from './utils.js';
 export async function initBookingPage() {
     const user = getCurrentUser();
     
-    // Kontrollera om användaren är inloggad
+    
     if (!user) {
         window.location.href = 'login.html';
         return;
     }
     
-    // Hämta vald kurs från sessionStorage
+    
     const selectedCourseJson = sessionStorage.getItem('selectedCourse');
     if (!selectedCourseJson) {
         showMessage('Ingen kurs vald', 'error');
@@ -26,16 +26,16 @@ export async function initBookingPage() {
     
     const course = JSON.parse(selectedCourseJson);
     
-    // Visa kursinformation
+   
     displayBookingSummary(course);
     
-    // Fyll i användarens uppgifter i formuläret
+    
     fillUserData(user);
     
-    // Fyll i datumval
+   
     populateDateSelect(course.dates);
     
-    // Sätt upp formulärhantering
+   
     setupBookingForm(course);
 }
 function displayBookingSummary(course) {
@@ -87,7 +87,6 @@ function setupBookingForm(course) {
             return;
         }
         
-        // Hämta formulärdata
         const formData = {
             userId: user.id,
             courseId: course.id,
@@ -100,7 +99,7 @@ function setupBookingForm(course) {
             amount: course.price
         };
         
-        // Validera formulär
+       
         const errors = validateBookingForm(formData);
         
         if (errors.length > 0) {
@@ -108,7 +107,7 @@ function setupBookingForm(course) {
             return;
         }
         
-        // Skapa bokningen
+        
         await processBooking(formData, course);
     });
 }
@@ -139,11 +138,11 @@ async function processBooking(bookingData, course) {
     showMessage('Bearbetar bokning...', 'info');
     
     try {
-        // Skapa bokningen i API:et
+       
         const booking = await createBooking(bookingData);
         
         if (booking) {
-            // Uppdatera användarens bokade kurser
+         
             const user = getCurrentUser();
             const updatedUser = {
                 ...user,
@@ -154,17 +153,16 @@ async function processBooking(bookingData, course) {
                 bookedCourses: updatedUser.bookedCourses 
             });
             
-            // Uppdatera currentUser
+            
             sessionStorage.setItem('currentUser', JSON.stringify(updatedUser));
             
-            // Visa succémeddelande
             showMessage(MESSAGES.BOOKING_SUCCESS, 'success');
             
             
-            // Rensa sessionStorage för kurs
+            
             sessionStorage.removeItem('selectedCourse');
             
-            // Omdirigera till profilsidan efter 3 sekunder
+            
             setTimeout(() => {
                 window.location.href = 'profile.html';
             }, 3000);
