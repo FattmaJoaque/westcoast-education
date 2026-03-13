@@ -21,7 +21,7 @@ A modern course booking platform for Westcoast Education, built as a Proof of Co
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com//westcoast-education.git
+   git clone https://github.com/FattmaJoaque/westcoast-education.git
    cd westcoast-education
    ```
 
