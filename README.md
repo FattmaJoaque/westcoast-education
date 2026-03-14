@@ -1,10 +1,10 @@
-# Westcoast Education 🎓
+# Westcoast Education
 
 A modern course booking platform for Westcoast Education, built as a Proof of Concept. The application allows users to browse, filter and book IT courses, with an admin panel for managing courses and bookings.
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 - **Vanilla JavaScript** (ES6 modules)
 - **HTML5** & **CSS3**
@@ -12,7 +12,7 @@ A modern course booking platform for Westcoast Education, built as a Proof of Co
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) installed
@@ -41,7 +41,7 @@ A modern course booking platform for Westcoast Education, built as a Proof of Co
 
 ---
 
-## 🔑 Test Credentials
+##  Test Credentials
 
 | Role  | Email | Password |
 |-------|-------|----------|
@@ -50,7 +50,7 @@ A modern course booking platform for Westcoast Education, built as a Proof of Co
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Public
 - Browse all available courses
@@ -97,12 +97,12 @@ westcoast-education/
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The application is fully responsive and works on all screen sizes. On mobile, a slide-in drawer navigation is used.
 
 ---
 
-## 👤 Author
+##  Author
 
 Developed as a school project for the Westcoast Education course assignment.
